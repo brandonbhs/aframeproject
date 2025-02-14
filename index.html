@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.2/dist/aframe-physics-system.min.js"></script>
+	
+    
+    <script src="script.js"></script>
+	<script src="player.js"></script>
+	<script src="spider.js"></script>
+	<script src="spike.js"></script>
+	<script src="floor.js"></script>
+	<script src="pole.js"></script>
+
+  </head>
+  <body>
+<a-scene physics="debug: false">
+
+<a-assets> 
+  <a-asset-item id="spider" src="spider/scene.gltf"></a-asset-item>
+  <a-asset item id="powerup" src="powerup/scene.gltf"></a-asset-item>
+  <a-asset-item id="sign" src="sign/scene.gltf"></a-asset-item>
+  <a-asset-item id="coin" src="coin/scene.gltf"></a-asset-item>
+</a-assets>
+
+	  <a-gltf-model src="#spider" position= "20 0 0" rotation= "0 180 0" scale="0.4 0.4 0.4"></a-gltf-model>
+	  <a-gltf-model src="#spider" position= "86 0.2 2" rotation= "0 180 0" scale="0.4 0.4 0.4"></a-gltf-model>
+	  <a-gltf-model src="#spider" position= "87 0.2 5" rotation= "0 180 0" scale="0.4 0.4 0.4"></a-gltf-model>
+	  <a-gltf-model src="#spider" position= "88 0.2 -1" rotation= "0 180 0" scale="0.4 0.4 0.4"></a-gltf-model>
+	  <a-gltf-model src="#powerup" position="2.5 3 -1.5"></a-gltf-model>
+	  <a-gltf-model src="#powerup" position="80 2 0" scale="0.5 0.5 0.5" ></a-gltf-model>
+	  <a-gltf-model src="#sign" position= "21 0 -1" rotation = "0 270 0" ></a-gltf-model>
+	  
+	  <a-gltf-model src="#coin" id="myCoin" position= "24 1 -1.5" rotation = "0 270 0" scale= "0.1 0.1 0.1"  ></a-gltf-model>
+	  <a-gltf-model src="#coin" id="myCoin" position= "24 1 0" rotation = "0 270 0" scale= "0.1 0.1 0.1"  ></a-gltf-model>
+	  <a-gltf-model src="#coin" id="myCoin" position= "76 12 3" rotation = "0 270 0" scale= "0.1 0.1 0.1"  ></a-gltf-model>
+      -->
+   
+  
+   
+    <a-torus color="yellow" radius="0.5" radius-tubular="0.1" position="37 14 0"></a-torus>
+   
+   
+   
+   <a-text value="Hi!" position="2.5 13 2" color="green" side="double" ></a-text>
+   
+  
+  <a-plane static-body color="red" rotation="-90 0 0" side="double" width="5" height="5" position="2.3 0 0"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="2" height="2" position="7 0 5"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="2" height="2" position="7 0 -5"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="4" height="4" position="12 0 0"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="2" height="2" position="15 0 -5"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="2" height="2" position="15 0 5"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="4" height="4" position="20 0 0"></a-plane>
+  <a-plane color="green" rotation="-90 0 0" side="double" width="4" height="1" position="24 0  0"></a-plane>
+  <a-plane color="yellow" rotation="-90 0 0" side="double" width="4" height="1" position="24 0 -1.5"></a-plane>
+  <a-plane static-body color="pink" rotation="-90 0 0" side="double" width="4" height="1" position="24 0  1.5"></a-plane>
+  <a-plane color="green" rotation="-90 0 0" side="double" width="12" height="12" position="36 0   0"></a-plane>
+  <a-plane static-body color="green" rotation="-90 0 0" side="double" width="12" height="12" position="36 0   0"></a-plane>
+  <a-plane static-body color="blue" rotation="-90 0 0" side="double" width="18" height="16" position="50 0 0"></a-plane>
+  <a-box static-body color="orange" rotation="-90 0 0" side="double"  width="1" height="16" position="46 0.5 0"  scale="0.5 0.98 0.5" ></a-box>
+  <a-box static-body color="yellow" rotation="-90 0 0" side="double"  width="1" height="16" position="48 0.5 0"  scale="0.5 0.98 0.5" ></a-box>
+  <a-box static-body color="green" rotation="-90 0 0" side="double"  width="1" height="16" position="50 0.5 0"  scale="0.5 0.98 0.5" ></a-box>
+  <a-box static-body color="purple" rotation="-90 0 0" side="double"  width="1" height="16" position="52 0.5 0"  scale="0.5 0.98 0.5" ></a-box>
+  <a-box static-body color="brown" rotation="-90 0 0" side="double"  width="1" height="16" position="54 0.5 0"  scale="0.5 0.98 0.5" ></a-box>
+  <a-box static-body color="pink" rotation="-90 0 0" side="double"  width="1" height="16" position="56 0 .5 0"  scale="0.5 0.98 0.5" ></a-box>
+  <a-cylinder static-body color="red" side="double" height="12" position="37 16 0" scale="2 0  2" ></a-cylinder>
+  <a-box static-body color="green" side="double" width="1" height="1" scale = "2 2 2" position="62 2 0"></a-box>
+  <a-box static-body color="yellow" side="double" width="1" height="1" scale = "2 2 2" position="66 3 4"></a-box>
+  <a-box static-body color="pink" side="double" width="1" height="1" scale = "2 2 2" position="70 5 1"></a-box>
+  <a-box static-body color="orange" side="double" width="1" height="1" scale = "2 2 2" position="74 6 6"></a-box>
+  <a-box static-body color="red" side="double" width="1" height="1" scale = "2 2 2" position="76 0 3"></a-box>
+  <a-plane static-body rotation="-90 0 0" color="orange" side="double" width="10" height="10" position="84 0 2"></a-plane>
+  <a-plane static-body rotation="-90 0 0" side="double" color="red" width="2" height="2"  position="70 5 -7"></a-plane>
+  <a-plane static-body rotation="-90 0 0" side="double" color="blue" width="2" height="2" position="70 5 9"></a-plane>
+  
+  
+  
+  
+
+ 
+  
+  
+
+    <a-camera position="0 5 0">
+      <a-cursor> <a-text value="Lives: " position="-1 1 -1" color="black"></a-text> </a-cursor>
+    </a-camera>
+
+</a-scene>
+  </body>
+</html
