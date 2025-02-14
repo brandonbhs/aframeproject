@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wooden Sign
+* source:	https://sketchfab.com/3d-models/wooden-sign-4ccc6221a09842a19c4c5dbc0d724041
+* author:	assis.threedee (https://sketchfab.com/assis.threedee)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wooden Sign" (https://sketchfab.com/3d-models/wooden-sign-4ccc6221a09842a19c4c5dbc0d724041) by assis.threedee (https://sketchfab.com/assis.threedee) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
